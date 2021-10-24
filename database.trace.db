@@ -1,0 +1,15 @@
+10-24 20:00:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EVENTS (MESSAGE, DATETIME) VALUES ('Error: 776062', '2021-10-24 20:00:40'56345[*]); "; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO Events (Message, DateTime) VALUES ('Error: 776062', '2021-10-24 20:00:40'56345); [42001-187]
+10-24 20:00:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EVENTS (MESSAGE, DATETIME) VALUES ('Fatal: 933731', '2021-10-24 20:00:40'56345[*]); "; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO Events (Message, DateTime) VALUES ('Fatal: 933731', '2021-10-24 20:00:40'56345); [42001-187]
+10-24 20:00:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EVENTS (MESSAGE, DATETIME) VALUES ('Error: 424872', '2021-10-24 20:00:40'56345[*]); "; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO Events (Message, DateTime) VALUES ('Error: 424872', '2021-10-24 20:00:40'56345); [42001-187]
+10-24 20:00:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EVENTS (MESSAGE, DATETIME) VALUES ('Error: 408706', '2021-10-24 20:00:40'56345[*]); "; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO Events (Message, DateTime) VALUES ('Error: 408706', '2021-10-24 20:00:40'56345); [42001-187]
+10-24 20:00:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EVENTS (MESSAGE, DATETIME) VALUES ('Error: 489725', '2021-10-24 20:00:40'56345[*]); "; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO Events (Message, DateTime) VALUES ('Error: 489725', '2021-10-24 20:00:40'56345); [42001-187]

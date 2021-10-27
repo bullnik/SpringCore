@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class EventDAO {
@@ -47,11 +48,14 @@ public class EventDAO {
     }
 
     private String dateToSqlDateTimeString(Date date) {
-        DateFormat df = new SimpleDateFormat();
-        String year = date.toString().substring(25, 29);
-        String month = df.format(date).substring(0, 2);
-        String day = date.toString().substring(8, 10);
-        String time = date.toString().substring(11, 19);
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        String year = Integer.toString(calendar.get(Calendar.YEAR));
+        String month = Integer.toString(calendar.get(Calendar.MONTH));
+        String day = Integer.toString(calendar.get(Calendar.DAY_OF_MONTH));
+        String time = calendar.get(Calendar.HOUR_OF_DAY) + ":"
+                + calendar.get(Calendar.MINUTE) + ":"
+                + calendar.get(Calendar.SECOND);
         return year + "-" + month + "-" + day + " " + time;
     }
 }
